@@ -1,0 +1,818 @@
+EESchema Schematic File Version 2
+LIBS:LIRC-HighPowerSerialTransceiver-Components
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LIRC-HighPowerSerialTransceiver-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LIRC High-Power Serial Transceiver"
+Date "22 nov 2016"
+Rev ""
+Comp "Cédric Dufour <http://cedric.dufour.name>"
+Comment1 "CC-BY"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM2936Z-5.0 U1
+U 1 1 58289387
+P 3600 1500
+F 0 "U1" H 3500 1250 40  0000 R CNB
+F 1 "LM2936Z-5.0" H 3500 1750 40  0000 R CNN
+F 2 "TO-92" H 3500 1700 30  0000 R CNN
+F 3 "~" H 3850 1150 60  0000 C CNN
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSOP2238 IC1
+U 1 1 582896A3
+P 4750 2000
+F 0 "IC1" H 4600 1600 40  0000 R CNB
+F 1 "TSOP2238" H 4600 2250 40  0000 R CNN
+F 2 "DIP" H 4600 2200 30  0000 R CNN
+F 3 "~" H 4635 1865 60  0000 C CNN
+	1    4750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSOP2256 IC2
+U 1 1 582896B2
+P 4750 2900
+F 0 "IC2" H 4600 2500 40  0000 R CNB
+F 1 "TSOP2256" H 4600 3150 40  0000 R CNN
+F 2 "DIP" H 4600 3100 30  0000 R CNN
+F 3 "~" H 4635 2765 60  0000 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N4148 D2
+U 1 1 582896D0
+P 5250 2900
+F 0 "D2" H 5150 2800 40  0000 R CNB
+F 1 "1N4148" H 5150 3000 40  0000 R CNN
+F 2 "" H 5250 2900 60  0000 C CNN
+F 3 "" H 5250 2900 60  0000 C CNN
+	1    5250 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L 2N3906 Q1
+U 1 1 582896FD
+P 6700 2000
+F 0 "Q1" H 6550 1850 40  0000 R CNB
+F 1 "2N3906" H 6550 2150 40  0000 R CNN
+F 2 "TO-92" H 6550 2100 30  0000 R CNN
+F 3 "~" H 6600 2000 60  0000 C CNN
+	1    6700 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 582897F8
+P 6700 2550
+F 0 "R3" H 6600 2450 40  0000 R CNB
+F 1 "220Ω" H 6600 2650 40  0000 R CNN
+F 2 "" H 6700 2550 60  0000 C CNN
+F 3 "" H 6700 2550 60  0000 C CNN
+	1    6700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58289825
+P 6050 2000
+F 0 "R1" H 5950 1900 40  0000 R CNB
+F 1 "10kΩ" H 5950 2100 40  0000 R CNN
+F 2 "" H 6050 2000 60  0000 C CNN
+F 3 "" H 6050 2000 60  0000 C CNN
+	1    6050 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 2N3904 Q2
+U 1 1 5828984E
+P 7600 2300
+F 0 "Q2" H 7450 2150 40  0000 R CNB
+F 1 "2N3904" H 7450 2450 40  0000 R CNN
+F 2 "TO-92" H 7450 2400 30  0000 R CNN
+F 3 "~" H 7500 2151 60  0000 C CNN
+	1    7600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58289899
+P 7050 2300
+F 0 "R4" H 6950 2200 40  0000 R CNB
+F 1 "4.7kΩ" H 6950 2400 40  0000 R CNN
+F 2 "" H 7050 2300 60  0000 C CNN
+F 3 "" H 7050 2300 60  0000 C CNN
+	1    7050 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58289933
+P 4700 2400
+F 0 "#PWR01" H 4700 2400 30  0001 C CNB
+F 1 "GND" H 4700 2330 30  0001 C CNN
+F 2 "" H 4700 2400 60  0000 C CNN
+F 3 "" H 4700 2400 60  0000 C CNN
+	1    4700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58289942
+P 3600 1800
+F 0 "#PWR02" H 3600 1800 30  0001 C CNB
+F 1 "GND" H 3600 1730 30  0001 C CNN
+F 2 "" H 3600 1800 60  0000 C CNN
+F 3 "" H 3600 1800 60  0000 C CNN
+	1    3600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58289951
+P 4700 3300
+F 0 "#PWR03" H 4700 3300 30  0001 C CNB
+F 1 "GND" H 4700 3230 30  0001 C CNN
+F 2 "" H 4700 3300 60  0000 C CNN
+F 3 "" H 4700 3300 60  0000 C CNN
+	1    4700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58289960
+P 6700 3300
+F 0 "#PWR04" H 6700 3300 30  0001 C CNB
+F 1 "GND" H 6700 3230 30  0001 C CNN
+F 2 "" H 6700 3300 60  0000 C CNN
+F 3 "" H 6700 3300 60  0000 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8250 2000 2    40   Output ~ 0
+DCD
+Text GLabel 8250 1500 2    40   UnSpc ~ 0
+RTS
+$Comp
+L R R5
+U 1 1 58289970
+P 7600 1750
+F 0 "R5" H 7500 1650 40  0000 R CNB
+F 1 "4.7kΩ" H 7500 1850 40  0000 R CNN
+F 2 "" H 7600 1750 60  0000 C CNN
+F 3 "" H 7600 1750 60  0000 C CNN
+	1    7600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N4148 D4
+U 1 1 58289985
+P 7850 1500
+F 0 "D4" H 7750 1400 40  0000 R CNB
+F 1 "1N4148" H 7750 1600 40  0000 R CNN
+F 2 "" H 7850 1500 60  0000 C CNN
+F 3 "" H 7850 1500 60  0000 C CNN
+	1    7850 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 58289A05
+P 7600 3300
+F 0 "#PWR05" H 7600 3300 30  0001 C CNB
+F 1 "GND" H 7600 3230 30  0001 C CNN
+F 2 "" H 7600 3300 60  0000 C CNN
+F 3 "" H 7600 3300 60  0000 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 58289686
+P 7600 5050
+F 0 "R11" H 7500 4950 40  0000 R CNB
+F 1 "3.3Ω" H 7500 5150 40  0000 R CNN
+F 2 "~" H 7600 5050 60  0000 C CNN
+F 3 "~" H 7600 5050 60  0000 C CNN
+	1    7600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5828981E
+P 9100 6400
+F 0 "#PWR06" H 9100 6400 30  0001 C CNB
+F 1 "GND" H 9100 6330 30  0001 C CNN
+F 2 "" H 9100 6400 60  0000 C CNN
+F 3 "" H 9100 6400 60  0000 C CNN
+	1    9100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q3
+U 1 1 5828998A
+P 6000 5900
+F 0 "Q3" H 5850 5750 40  0000 R CNB
+F 1 "2N3904" H 5850 6050 40  0000 R CNN
+F 2 "TO-92" H 5850 6000 30  0000 R CNN
+F 3 "~" H 5900 5751 60  0000 C CNN
+	1    6000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5828999C
+P 5350 5900
+F 0 "R7" H 5250 5800 40  0000 R CNB
+F 1 "10kΩ" H 5250 6000 40  0000 R CNN
+F 2 "~" H 5350 5900 60  0000 C CNN
+F 3 "~" H 5350 5900 60  0000 C CNN
+	1    5350 5900
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 58289A76
+P 6000 6400
+F 0 "#PWR07" H 6000 6400 30  0001 C CNB
+F 1 "GND" H 6000 6330 30  0001 C CNN
+F 2 "" H 6000 6400 60  0000 C CNN
+F 3 "" H 6000 6400 60  0000 C CNN
+	1    6000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3906 Q4
+U 1 1 58289ACD
+P 6900 5300
+F 0 "Q4" H 6750 5150 40  0000 R CNB
+F 1 "2N3906" H 6750 5450 40  0000 R CNN
+F 2 "TO-92" H 6750 5400 30  0000 R CNN
+F 3 "~" H 6800 5300 60  0000 C CNN
+	1    6900 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC161-16 Q5
+U 1 1 58289ADC
+P 7600 5600
+F 0 "Q5" H 7450 5450 40  0000 R CNB
+F 1 "BC161-16" H 7450 5750 40  0000 R CNN
+F 2 "TO-39" H 7450 5700 30  0000 R CNN
+F 3 "~" H 7500 5600 60  0000 C CNN
+	1    7600 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 58289BB9
+P 6350 5600
+F 0 "R9" H 6250 5500 40  0000 R CNB
+F 1 "680Ω" H 6250 5700 40  0000 R CNN
+F 2 "~" H 6350 5600 60  0000 C CNN
+F 3 "~" H 6350 5600 60  0000 C CNN
+	1    6350 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R8
+U 1 1 58289CF3
+P 5600 6250
+F 0 "R8" H 5500 6150 40  0000 R CNB
+F 1 "4.7kΩ" H 5500 6350 40  0000 R CNN
+F 2 "~" H 5600 6250 60  0000 C CNN
+F 3 "~" H 5600 6250 60  0000 C CNN
+	1    5600 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 58289D11
+P 5600 6400
+F 0 "#PWR08" H 5600 6400 30  0001 C CNB
+F 1 "GND" H 5600 6330 30  0001 C CNN
+F 2 "" H 5600 6400 60  0000 C CNN
+F 3 "" H 5600 6400 60  0000 C CNN
+	1    5600 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 5900 0    40   Input ~ 0
+DTR
+$Comp
+L GND #PWR09
+U 1 1 58289F6E
+P 3600 5100
+F 0 "#PWR09" H 3600 5100 30  0001 C CNB
+F 1 "GND" H 3600 5030 30  0001 C CNN
+F 2 "" H 3600 5100 60  0000 C CNN
+F 3 "" H 3600 5100 60  0000 C CNN
+	1    3600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD20_RED D3
+U 1 1 5829C795
+P 6700 3100
+F 0 "D3" H 6600 2950 40  0000 R CNB
+F 1 "LD20_RED" H 6600 3250 40  0000 R CNN
+F 2 "~" H 6600 3200 30  0000 R CNN
+F 3 "~" H 6700 3100 60  0000 C CNN
+	1    6700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2000 5900 2000
+Wire Wire Line
+	6200 2000 6400 2000
+Wire Wire Line
+	6700 2200 6700 2400
+Connection ~ 6700 2300
+Wire Wire Line
+	6700 2700 6700 2900
+Wire Wire Line
+	8000 1500 8250 1500
+Wire Wire Line
+	7700 1500 7600 1500
+Wire Wire Line
+	7600 1500 7600 1600
+Wire Wire Line
+	7600 1900 7600 2100
+Wire Wire Line
+	7600 2000 8250 2000
+Connection ~ 7600 2000
+Wire Wire Line
+	7600 2500 7600 3300
+Wire Wire Line
+	3900 1500 6700 1500
+Wire Wire Line
+	6700 1500 6700 1800
+Wire Wire Line
+	4700 1700 4700 1500
+Connection ~ 4700 1500
+Wire Wire Line
+	4400 1500 4400 2600
+Wire Wire Line
+	4400 2600 4700 2600
+Connection ~ 4400 1500
+Wire Wire Line
+	5500 2900 5400 2900
+Connection ~ 5500 2000
+Wire Wire Line
+	3900 4800 7600 4800
+Wire Wire Line
+	7600 4800 7600 4900
+Wire Wire Line
+	5500 5900 5700 5900
+Wire Wire Line
+	6000 6100 6000 6400
+Wire Wire Line
+	6900 4800 6900 5100
+Connection ~ 6900 4800
+Wire Wire Line
+	7600 5200 7600 5400
+Wire Wire Line
+	7200 5300 7600 5300
+Connection ~ 7600 5300
+Wire Wire Line
+	7600 5800 7600 5900
+Wire Wire Line
+	6500 5600 7300 5600
+Wire Wire Line
+	6900 5500 6900 5600
+Connection ~ 6900 5600
+Wire Wire Line
+	5600 6100 5600 5900
+Connection ~ 5600 5900
+Wire Wire Line
+	5000 2900 5100 2900
+Wire Wire Line
+	4100 1400 4100 1600
+Connection ~ 4100 1500
+$Comp
+L GND #PWR010
+U 1 1 5829CFFA
+P 4100 1900
+F 0 "#PWR010" H 4100 1900 30  0001 C CNB
+F 1 "GND" H 4100 1830 30  0001 C CNN
+F 2 "" H 4100 1900 60  0000 C CNN
+F 3 "" H 4100 1900 60  0000 C CNN
+	1    4100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 582A1991
+P 6300 1750
+F 0 "R2" H 6200 1650 40  0000 R CNB
+F 1 "4.7kΩ" H 6200 1850 40  0000 R CNN
+F 2 "" H 6300 1750 60  0000 C CNN
+F 3 "" H 6300 1750 60  0000 C CNN
+	1    6300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2300 7300 2300
+Wire Wire Line
+	6900 2300 6700 2300
+$Comp
+L GND #PWR011
+U 1 1 582A3334
+P 4100 5200
+F 0 "#PWR011" H 4100 5200 30  0001 C CNB
+F 1 "GND" H 4100 5130 30  0001 C CNN
+F 2 "" H 4100 5200 60  0000 C CNN
+F 3 "" H 4100 5200 60  0000 C CNN
+	1    4100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4700 4100 4900
+Connection ~ 4100 4800
+$Comp
+L LM2937ET-8.0 U2
+U 1 1 582CA712
+P 3600 4800
+F 0 "U2" H 3500 4550 40  0000 R CNB
+F 1 "LM2937ET-8.0" H 3500 5050 40  0000 R CNN
+F 2 "TO-220" H 3500 5000 30  0000 R CNN
+F 3 "~" H 3850 4450 60  0000 C CNN
+	1    3600 4800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2550 3900 10700 3900
+Text Notes 1300 5750 0    400  Italic 0
+TX
+Text Notes 1300 2600 0    400  Italic 0
+RX
+Wire Wire Line
+	6300 1600 6300 1500
+Connection ~ 6300 1500
+Wire Wire Line
+	6300 1900 6300 2000
+Connection ~ 6300 2000
+$Comp
+L 1N4148 D5
+U 1 1 582D8170
+P 4950 5900
+F 0 "D5" H 4850 5800 40  0000 R CNB
+F 1 "1N4148" H 4850 6000 40  0000 R CNN
+F 2 "" H 4950 5900 60  0000 C CNN
+F 3 "" H 4950 5900 60  0000 C CNN
+	1    4950 5900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4300 5900 4200 5900
+Text Notes 9400 6100 0    60   Italic 0
+High power IR LEDs
+Text Notes 2600 5950 0    60   Italic 0
+RS-232 input (active high)
+Text Notes 8600 2050 0    60   Italic 0
+RS-232 output (active low)
+Text Notes 8600 1550 0    60   Italic 0
+RS-232 reference voltage (Vhi)
+$Comp
+L VCC #012
+U 1 1 582D840C
+P 3600 4400
+F 0 "#012" H 3600 4500 30  0001 C CNB
+F 1 "VCC" H 3600 4500 30  0000 C CNN
+F 2 "" H 3600 4400 60  0000 C CNN
+F 3 "" H 3600 4400 60  0000 C CNN
+	1    3600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #013
+U 1 1 582D8447
+P 3600 1100
+F 0 "#013" H 3600 1200 30  0001 C CNB
+F 1 "VCC" H 3600 1200 30  0000 C CNN
+F 2 "" H 3600 1100 60  0000 C CNN
+F 3 "" H 3600 1100 60  0000 C CNN
+	1    3600 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 4900 2250 0    60   Italic 0
+38kHz RX
+Text Notes 4900 3150 0    60   Italic 0
+56kHz RX
+Text Notes 5650 3150 0    60   Italic 0
+Tx/Rx Indicator LED
+Text Notes 2550 4050 0    60   Italic 0
+Note: RS-232 specification: Vlo = -15V to -3.3V; Vhi = +3.3 to +15V (depending on actual card); tolerate up to ±25V
+Text Notes 3800 4550 0    60   Italic 0
+Pdis = 0.80W inst / 0.44W avg
+Text Notes 3800 1250 0    60   Italic 0
+Pdis = 175mW inst
+Text Notes 7800 5650 0    60   Italic 0
+Pdis = 0.36W inst / 0.18W avg
+Text Notes 9400 6200 0    60   Italic 0
+Pled = 1.15W inst / 0.58W avg
+Text Notes 3800 4450 0    60   Italic 0
+Ptot = 2.40W inst / 1.32W avg
+Text Notes 3800 1150 0    60   Italic 0
+Ptot = 300mW inst
+$Comp
+L R R10
+U 1 1 582E165B
+P 6600 5250
+F 0 "R10" H 6500 5150 40  0000 R CNB
+F 1 "6.8kΩ" H 6500 5350 40  0000 R CNN
+F 2 "~" H 6600 5250 60  0000 C CNN
+F 3 "~" H 6600 5250 60  0000 C CNN
+	1    6600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5100 6600 4800
+Connection ~ 6600 4800
+Wire Wire Line
+	6600 5400 6600 5600
+Connection ~ 6600 5600
+Wire Wire Line
+	5500 2000 5500 2000
+Wire Wire Line
+	5500 2000 5500 2900
+$Comp
+L TSAL6200 D7
+U 1 1 582F437E
+P 8100 6100
+F 0 "D7" H 8000 5950 50  0000 R CNB
+F 1 "~" H 8000 6250 40  0000 R CNN
+F 2 "~" H 8000 6200 30  0000 R CNN
+F 3 "~" H 8100 6100 60  0000 C CNN
+	1    8100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSAL6200 D8
+U 1 1 582F4395
+P 8600 6100
+F 0 "D8" H 8500 5950 50  0000 R CNB
+F 1 "~" H 8500 6250 40  0000 R CNN
+F 2 "~" H 8500 6200 30  0000 R CNN
+F 3 "~" H 8600 6100 60  0000 C CNN
+	1    8600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSAL6200 D9
+U 1 1 582F439B
+P 9100 6100
+F 0 "D9" H 9000 5950 50  0000 R CNB
+F 1 "~" H 9000 6250 40  0000 R CNN
+F 2 "~" H 9000 6200 30  0000 R CNN
+F 3 "~" H 9100 6100 60  0000 C CNN
+	1    9100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 6300 9100 6400
+$Comp
+L TSAL6200 D6
+U 1 1 58289695
+P 7600 6100
+F 0 "D6" H 7500 5950 50  0000 R CNB
+F 1 "TSAL6200" H 7500 6250 40  0000 R CNN
+F 2 "T1_3/4" H 7500 6200 30  0000 R CNN
+F 3 "~" H 7600 6100 60  0000 C CNN
+	1    7600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 6300 7600 6400
+Wire Wire Line
+	7600 6400 7850 6400
+Wire Wire Line
+	7850 6400 7850 5800
+Wire Wire Line
+	7850 5800 8100 5800
+Wire Wire Line
+	8100 5800 8100 5900
+Wire Wire Line
+	8100 6300 8100 6400
+Wire Wire Line
+	8100 6400 8350 6400
+Wire Wire Line
+	8350 6400 8350 5800
+Wire Wire Line
+	8350 5800 8600 5800
+Wire Wire Line
+	8600 5800 8600 5900
+Wire Wire Line
+	8600 6300 8600 6400
+Wire Wire Line
+	8600 6400 8850 6400
+Wire Wire Line
+	8850 6400 8850 5800
+Wire Wire Line
+	8850 5800 9100 5800
+Wire Wire Line
+	9100 5800 9100 5900
+$Comp
+L CP C1
+U 1 1 582F43BF
+P 4100 1750
+F 0 "C1" H 4000 1650 40  0000 R CNB
+F 1 "10uF" H 4000 1850 40  0000 R CNN
+F 2 "~" H 4100 1750 60  0000 C CNN
+F 3 "~" H 4100 1750 60  0000 C CNN
+	1    4100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 582F43D8
+P 4100 5050
+F 0 "C2" H 4000 4950 40  0000 R CNB
+F 1 "10uF" H 4000 5150 40  0000 R CNN
+F 2 "~" H 4100 5050 60  0000 C CNN
+F 3 "~" H 4100 5050 60  0000 C CNN
+	1    4100 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 2550 3850 0    60   Italic 0
+Power: 12V over RS-232 (RI pin with supporting card) or 9V battery
+$Comp
+L DB9 J1
+U 1 1 582F506D
+P 1550 3900
+F 0 "J1" H 1550 4450 70  0000 C CNN
+F 1 "DB9" H 1550 3350 70  0000 C CNN
+F 2 "" H 1550 3900 60  0000 C CNN
+F 3 "" H 1550 3900 60  0000 C CNN
+	1    1550 3900
+	-1   0    0    1   
+$EndComp
+Text GLabel 2000 3800 2    40   UnSpc ~ 0
+RTS
+Text GLabel 2000 3500 2    40   Input ~ 0
+DCD
+Text GLabel 2000 4100 2    40   Output ~ 0
+DTR
+Text GLabel 2000 4200 2    40   UnSpc ~ 0
+RI
+$Comp
+L GND #PWR014
+U 1 1 582F50B0
+P 2100 4400
+F 0 "#PWR014" H 2100 4400 30  0001 C CNB
+F 1 "GND" H 2100 4330 30  0001 C CNN
+F 2 "" H 2100 4400 60  0000 C CNN
+F 3 "" H 2100 4400 60  0000 C CNN
+	1    2100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4400 2100 4300
+Wire Wire Line
+	2100 4300 2000 4300
+Text GLabel 3550 1100 0    40   UnSpc ~ 0
+RI
+Wire Wire Line
+	3550 1100 3600 1100
+Wire Wire Line
+	3600 1100 3600 1200
+Text GLabel 3550 4400 0    40   UnSpc ~ 0
+RI
+Wire Wire Line
+	3550 4400 3600 4400
+Wire Wire Line
+	3600 4400 3600 4500
+$Comp
+L C C3
+U 1 1 583297C9
+P 4450 5900
+F 0 "C3" H 4350 5800 40  0000 R CNB
+F 1 "4.7nF" H 4350 6000 40  0000 R CNN
+F 2 "~" H 4450 5900 60  0000 C CNN
+F 3 "~" H 4450 5900 60  0000 C CNN
+	1    4450 5900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4600 5900 4800 5900
+Wire Wire Line
+	5100 5900 5200 5900
+Wire Wire Line
+	6000 5700 6000 5600
+Wire Wire Line
+	6000 5600 6200 5600
+Wire Wire Line
+	5000 2000 5100 2000
+$Comp
+L 1N4148 D1
+U 1 1 582896C1
+P 5250 2000
+F 0 "D1" H 5150 1900 40  0000 R CNB
+F 1 "1N4148" H 5150 2100 40  0000 R CNN
+F 2 "" H 5250 2000 60  0000 C CNN
+F 3 "" H 5250 2000 60  0000 C CNN
+	1    5250 2000
+	0    1    1    0   
+$EndComp
+Text GLabel 5000 1900 1    40   UnSpc ~ 0
+RX38
+Wire Wire Line
+	5000 2000 5000 1900
+Text GLabel 5000 2800 1    40   UnSpc ~ 0
+RX56
+Wire Wire Line
+	5000 2800 5000 2900
+Text GLabel 4150 1400 2    40   UnSpc ~ 0
+5V
+Text GLabel 4150 4700 2    40   UnSpc ~ 0
+8V
+Wire Wire Line
+	4150 1400 4100 1400
+Wire Wire Line
+	4150 4700 4100 4700
+Text GLabel 6750 2900 2    40   UnSpc ~ 0
+RXLD
+Wire Wire Line
+	6700 2900 6750 2900
+Text GLabel 7650 5900 2    40   UnSpc ~ 0
+TXLD
+Wire Wire Line
+	7600 5900 7650 5900
+$Comp
+L R R6
+U 1 1 583339C5
+P 4700 6250
+F 0 "R6" H 4600 6150 40  0000 R CNB
+F 1 "10kΩ" H 4600 6350 40  0000 R CNN
+F 2 "~" H 4700 6250 60  0000 C CNN
+F 3 "~" H 4700 6250 60  0000 C CNN
+	1    4700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 583339EB
+P 4700 6400
+F 0 "#PWR015" H 4700 6400 30  0001 C CNB
+F 1 "GND" H 4700 6330 30  0001 C CNN
+F 2 "" H 4700 6400 60  0000 C CNN
+F 3 "" H 4700 6400 60  0000 C CNN
+	1    4700 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6100 4700 5900
+Connection ~ 4700 5900
+Text Notes 2600 6150 0    60   Italic 0
+NOTE: C3 filters out potential\nconstant Vhi (when LIRC is not\ncontrolling the RS-232 port),\nwhile D5 blocks negative Vlo
+Text Notes 7800 5000 0    60   Italic 0
+I = 0.6V/3.3Ω = 180mA inst, 90mA avg
+Text Notes 7800 5200 0    60   Italic 0
+NOTE: TSAL6200 is overdriven by 80mA,\nwhich is fine with a duty-cycle of 50% and\na period < 100us (frequency > 10kHz)
+Text Notes 3800 4350 0    60   Italic 0
+At Vcc = 12V and Itot = 200mA inst / 110mA avg
+Text Notes 3800 1050 0    60   Italic 0
+At Vcc = 12V and Itot = 25mA inst
+Text Notes 7800 4900 0    60   Italic 0
+Two-transistors constant current source
+Text Notes 2600 2300 0    60   Italic 0
+38kHz and 56kHz sensors for\nmaximal range with all types\nof remotes
+$EndSCHEMATC

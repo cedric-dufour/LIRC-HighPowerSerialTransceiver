@@ -1,6 +1,10 @@
 LIRC High-Power Serial Transceiver
 ==================================
 
+> THIS PROJECT HAS MOVED TO https://codeberg.org/cedric-dufour/LIRC-HighPowerSerialTransceiver
+>
+> (and may vanish from GitHub with no further notice; please update your upstream URL)
+
 This electronics project spawned from my need to blast Philips RC6 infrared
 codes across my entire living room and remote control my existing Feller
 Zeptrion [1] (house control) electric installation, with the help of the Linux
